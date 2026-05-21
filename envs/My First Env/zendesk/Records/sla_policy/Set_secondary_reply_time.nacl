@@ -1,0 +1,13 @@
+zendesk.sla_policy Set_secondary_reply_time@s {
+  title = "Set secondary reply time"
+  policy_metrics = [
+    {
+      priority = "normal"
+      metric = "next_reply_time"
+      target = 300
+      business_hours = false
+      target_in_seconds = 18000
+    },
+  ]
+  _alias = "Set secondary reply time"
+}
