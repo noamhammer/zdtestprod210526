@@ -1,0 +1,13 @@
+zendesk.sla_policy NH {
+  title = "NH"
+  policy_metrics = [
+    {
+      priority = "normal"
+      metric = "first_reply_time"
+      target = 15
+      business_hours = false
+      target_in_seconds = 900
+    },
+  ]
+  _alias = "NH"
+}
