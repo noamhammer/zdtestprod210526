@@ -1,0 +1,5 @@
+zendesk.queue_order {
+  active = [
+    zendesk.queue.instance.Test_Queue_2@s,
+  ]
+}

@@ -1,0 +1,12 @@
+zendesk.brand standard_sandbox@s {
+  name = "standard sandbox"
+  brand_url = "https://d3vsalto21742807822.zendesk.com"
+  subdomain = "d3vsalto21742807822"
+  has_help_center = false
+  help_center_state = "disabled"
+  active = true
+  default = true
+  is_deleted = false
+  signature_template = "{{agent.signature}}"
+  _alias = "standard sandbox"
+}

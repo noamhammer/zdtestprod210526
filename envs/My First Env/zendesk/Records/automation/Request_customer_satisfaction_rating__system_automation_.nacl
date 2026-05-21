@@ -1,0 +1,56 @@
+zendesk.automation Request_customer_satisfaction_rating__system_automation_@ssssjsk {
+  title = "Request customer satisfaction rating (system automation)"
+  active = true
+  default = true
+  actions = [
+    {
+      field = "notification_user"
+      value = [
+        "requester_id",
+        "Request #{{ticket.id}}: How would you rate the support you received?",
+        '''
+Hello {{ticket.requester.name}},
+
+We'd love to hear what you think of our customer service. Please take a moment to answer one simple question by clicking either link below:
+
+{{satisfaction.rating_section}}
+
+Here's a reminder of what this request was about:
+
+{{ticket.comments_formatted}}
+
+''',
+      ]
+    },
+    {
+      field = "satisfaction_score"
+      value = "offered"
+    },
+  ]
+  conditions = {
+    all = [
+      {
+        field = "status"
+        operator = "less_than"
+        value = "closed"
+      },
+      {
+        field = "SOLVED"
+        operator = "is"
+        value = "24"
+      },
+      {
+        field = "satisfaction_score"
+        operator = "is"
+        value = "unoffered"
+      },
+      {
+        field = "ticket_is_public"
+        operator = "is"
+        value = "public"
+      },
+    ]
+  }
+  raw_title = "Request customer satisfaction rating (system automation)"
+  _alias = "Request customer satisfaction rating (system automation)"
+}

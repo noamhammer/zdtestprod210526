@@ -1,0 +1,6 @@
+zendesk.routing_attribute Expert {
+  name = "Expert"
+  values = [
+  ]
+  _alias = "Expert"
+}

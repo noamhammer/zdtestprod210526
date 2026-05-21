@@ -1,0 +1,32 @@
+zendesk.ticket_field CCE_Ticket_lookup@su {
+  type = "lookup"
+  raw_title = "CCE Ticket"
+  raw_description = "some desc"
+  active = true
+  required = false
+  collapsed_for_agents = false
+  raw_title_in_portal = "CCE Ticket"
+  visible_in_portal = false
+  editable_in_portal = false
+  required_in_portal = false
+  agent_can_edit = true
+  removable = true
+  relationship_target_type = "zen:ticket"
+  relationship_filter = {
+    all = [
+      {
+        field = "requester_id"
+        operator = "is"
+        value = "zendesk-adapter@salto.io"
+      },
+    ]
+    any = [
+      {
+        field = "requester_id"
+        operator = "is_not"
+        value = "zendesk-adapter@salto.io"
+      },
+    ]
+  }
+  _alias = "CCE Ticket"
+}

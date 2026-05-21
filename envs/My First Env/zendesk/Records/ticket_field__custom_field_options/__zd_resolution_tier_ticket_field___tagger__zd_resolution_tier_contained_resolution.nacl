@@ -1,0 +1,9 @@
+zendesk.ticket_field__custom_field_options __zd_resolution_tier_ticket_field___tagger__zd_resolution_tier_contained_resolution@_00123_00123vuuu_00125_00125uuuuuuu {
+  raw_name = "{{zd.resolution_tier_contained_resolution}}"
+  value = "zd_resolution_tier_contained_resolution"
+  allow_solving = true
+  _parent = [
+    zendesk.ticket_field.instance.__zd_resolution_tier_ticket_field___tagger@_00123_00123vuuu_00125_00125u,
+  ]
+  _alias = "zd_resolution_tier_contained_resolution"
+}

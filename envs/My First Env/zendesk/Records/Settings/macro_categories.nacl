@@ -1,0 +1,9 @@
+zendesk.macro_categories {
+  categories = [
+    "Noam",
+    "Delete",
+    "AST L1",
+    "Escalate",
+    "SLA",
+  ]
+}

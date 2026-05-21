@@ -1,0 +1,9 @@
+zendesk.ticket_field__custom_field_options __zd_channel_group_ticket_field___tagger__zd_channel_group_digital@_00123_00123vuuu_00125_00125uuuuuu {
+  raw_name = "{{zd.channel_group_digital}}"
+  value = "zd_channel_group_digital"
+  allow_solving = true
+  _parent = [
+    zendesk.ticket_field.instance.__zd_channel_group_ticket_field___tagger@_00123_00123vuuu_00125_00125u,
+  ]
+  _alias = "zd_channel_group_digital"
+}

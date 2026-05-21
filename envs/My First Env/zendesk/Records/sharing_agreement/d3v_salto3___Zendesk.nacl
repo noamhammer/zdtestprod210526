@@ -1,0 +1,6 @@
+zendesk.sharing_agreement d3v_salto3___Zendesk@bsms {
+  name = "d3v-salto3 @ Zendesk"
+  type = "outbound"
+  status = "pending"
+  remote_subdomain = "d3v-salto3"
+}

@@ -1,0 +1,9 @@
+zendesk.ticket_field__custom_field_options Escalation_Status_tagger__investigating@suuu {
+  raw_name = "Investigating"
+  value = "investigating"
+  allow_solving = true
+  _parent = [
+    zendesk.ticket_field.instance.Escalation_Status_tagger@su,
+  ]
+  _alias = "investigating"
+}

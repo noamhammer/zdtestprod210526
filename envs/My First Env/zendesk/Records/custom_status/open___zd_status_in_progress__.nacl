@@ -1,0 +1,9 @@
+zendesk.custom_status open___zd_status_in_progress__@u_00123_00123vuu_00125_00125 {
+  status_category = "open"
+  raw_agent_label = "{{zd.status_in_progress}}"
+  raw_end_user_label = "{{zd.status_end_user_in_progress}}"
+  raw_description = "{{zd.status_in_progress_description}}"
+  raw_end_user_description = "{{zd.status_end_user_in_progress_description}}"
+  active = true
+  _alias = "In Progress"
+}

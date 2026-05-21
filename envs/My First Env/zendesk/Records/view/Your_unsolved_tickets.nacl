@@ -1,0 +1,121 @@
+zendesk.view Your_unsolved_tickets@s {
+  active = true
+  default = false
+  execution = {
+    group_by = "status"
+    group_order = "asc"
+    sort_by = "nice_id"
+    sort_order = "desc"
+    group = {
+      id = "status"
+      title = "Status category"
+      filterable = true
+      sortable = true
+      order = "asc"
+    }
+    sort = {
+      id = "ticket_id"
+      title = "ID"
+      filterable = true
+      sortable = true
+      order = "desc"
+    }
+    columns = [
+      {
+        id = "custom_status_id"
+        title = "Ticket status"
+        filterable = true
+        sortable = false
+      },
+      {
+        id = "subject"
+        title = "Subject"
+        filterable = true
+        sortable = true
+      },
+      {
+        id = "requester"
+        title = "Requester"
+        filterable = true
+        sortable = true
+      },
+      {
+        id = "created"
+        title = "Requested"
+        filterable = false
+        sortable = true
+      },
+      {
+        id = "type"
+        title = "Type"
+        filterable = true
+        sortable = true
+      },
+      {
+        id = "priority"
+        title = "Priority"
+        filterable = true
+        sortable = true
+      },
+    ]
+    fields = [
+      {
+        id = "custom_status_id"
+        title = "Ticket status"
+        filterable = true
+        sortable = false
+      },
+      {
+        id = "subject"
+        title = "Subject"
+        filterable = true
+        sortable = true
+      },
+      {
+        id = "requester"
+        title = "Requester"
+        filterable = true
+        sortable = true
+      },
+      {
+        id = "created"
+        title = "Requested"
+        filterable = false
+        sortable = true
+      },
+      {
+        id = "type"
+        title = "Type"
+        filterable = true
+        sortable = true
+      },
+      {
+        id = "priority"
+        title = "Priority"
+        filterable = true
+        sortable = true
+      },
+    ]
+  }
+  conditions = {
+    all = [
+      {
+        field = "status"
+        operator = "less_than"
+        value = "solved"
+      },
+      {
+        field = "assignee_id"
+        operator = "is"
+        value = "current_user"
+      },
+      {
+        field = "support_type"
+        operator = "is"
+        value = "0"
+      },
+    ]
+  }
+  raw_title = "{{zd.your_unsolved_tickets}}"
+  _alias = "Your unsolved tickets"
+}

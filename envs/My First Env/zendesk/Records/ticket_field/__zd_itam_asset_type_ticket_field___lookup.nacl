@@ -1,0 +1,26 @@
+zendesk.ticket_field __zd_itam_asset_type_ticket_field___lookup@_00123_00123vuuuu_00125_00125u {
+  type = "lookup"
+  raw_title = "{{zd.itam_asset_type_ticket_field}}"
+  raw_description = "{{zd.itam_asset_type_ticket_field_description}}"
+  active = true
+  required = false
+  collapsed_for_agents = false
+  raw_title_in_portal = "{{zd.itam_asset_type_ticket_field}}"
+  visible_in_portal = true
+  editable_in_portal = true
+  required_in_portal = false
+  agent_can_edit = true
+  removable = true
+  key = "standard::itam_asset_type"
+  relationship_target_type = "zen:custom_object:standard::itam_asset_type"
+  relationship_filter = {
+    all = [
+      {
+        field = "custom_object.standard::itam_asset_type.custom_fields.standard::parent"
+        operator = "present"
+        value = true
+      },
+    ]
+  }
+  _alias = "Asset Type"
+}

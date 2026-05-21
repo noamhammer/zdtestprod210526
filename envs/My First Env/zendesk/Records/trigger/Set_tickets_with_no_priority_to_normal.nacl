@@ -1,0 +1,28 @@
+zendesk.trigger Set_tickets_with_no_priority_to_normal@s {
+  title = "Set tickets with no priority to normal"
+  active = true
+  default = false
+  actions = [
+    {
+      field = "priority"
+      value = "normal"
+    },
+  ]
+  conditions = {
+    all = [
+      {
+        field = "update_type"
+        operator = "is"
+        value = "Create"
+      },
+      {
+        field = "priority"
+        operator = "is"
+      },
+    ]
+  }
+  description = "Sets ticket priority to normal, if none is created, to apply a 1-hour first reply time SLA policy."
+  raw_title = "Set tickets with no priority to normal"
+  category_id = zendesk.trigger_category.instance.SLA
+  _alias = "Set tickets with no priority to normal"
+}

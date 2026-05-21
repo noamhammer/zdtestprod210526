@@ -1,0 +1,4 @@
+zendesk.trigger_category SLA {
+  name = "SLA"
+  _alias = "SLA"
+}

@@ -1,0 +1,11 @@
+zendesk.support_address standard_sandbox_support_standard_sandbox_s_subdomain_zendesk_com@sumumvvv {
+  brand_id = zendesk.brand.instance.standard_sandbox@s
+  default = true
+  name = "standard sandbox"
+  email = "support@${ zendesk.brand.instance.standard_sandbox@s.subdomain }.zendesk.com"
+  forwarding_status = "verified"
+  spf_status = "verified"
+  cname_status = "verified"
+  domain_verification_status = "verified"
+  _alias = "standard sandbox"
+}

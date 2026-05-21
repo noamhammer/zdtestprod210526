@@ -1,0 +1,9 @@
+zendesk.ticket_field__custom_field_options Coffee_Type_tagger__flat_white@suuuu {
+  raw_name = "Flat White"
+  value = "flat_white"
+  allow_solving = true
+  _parent = [
+    zendesk.ticket_field.instance.Coffee_Type_tagger@su,
+  ]
+  _alias = "flat_white"
+}

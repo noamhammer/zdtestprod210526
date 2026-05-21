@@ -1,0 +1,9 @@
+zendesk.ticket_field__custom_field_options __zd_required_tasks_ticket_field___tagger__zd_es_required_tasks_incomplete@_00123_00123vuuu_00125_00125uuuuuuu {
+  raw_name = "{{zd.required_tasks_incomplete}}"
+  value = "zd_es_required_tasks_incomplete"
+  allow_solving = false
+  _parent = [
+    zendesk.ticket_field.instance.__zd_required_tasks_ticket_field___tagger@_00123_00123vuuu_00125_00125u,
+  ]
+  _alias = "zd_es_required_tasks_incomplete"
+}

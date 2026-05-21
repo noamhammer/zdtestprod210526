@@ -1,0 +1,90 @@
+zendesk.trigger_order {
+  order = [
+    {
+      category = zendesk.trigger_category.instance.Notifications
+      active = [
+        zendesk.trigger.instance.Notify_requester_and_CCs_of_received_request@s,
+        zendesk.trigger.instance.Notify_requester_of_new_proactive_ticket@s,
+        zendesk.trigger.instance.Notify_requester_and_CCs_of_comment_update@s,
+        zendesk.trigger.instance.Notify_assignee_of_comment_update@s,
+        zendesk.trigger.instance.Notify_assignee_of_assignment@s,
+        zendesk.trigger.instance.Notify_assignee_of_reopened_ticket@s,
+        zendesk.trigger.instance.Notify_group_of_assignment@s,
+        zendesk.trigger.instance.Notify_all_agents_of_received_request@s,
+      ]
+      inactive = [
+      ]
+    },
+    {
+      category = zendesk.trigger_category.instance.SLA
+      active = [
+        zendesk.trigger.instance.Set_tickets_with_no_priority_to_normal@s,
+      ]
+      inactive = [
+      ]
+    },
+    {
+      category = zendesk.trigger_category.instance.audit_test@s
+      active = [
+      ]
+      inactive = [
+      ]
+    },
+    {
+      category = zendesk.trigger_category.instance.Neta_order_test_1212@s
+      active = [
+      ]
+      inactive = [
+      ]
+    },
+    {
+      category = zendesk.trigger_category.instance.Answer_Bot_Triggers@s
+      active = [
+      ]
+      inactive = [
+      ]
+    },
+    {
+      category = zendesk.trigger_category.instance.Field_Updates@s
+      active = [
+      ]
+      inactive = [
+      ]
+    },
+    {
+      category = zendesk.trigger_category.instance.General_Settings@s
+      active = [
+      ]
+      inactive = [
+      ]
+    },
+    {
+      category = zendesk.trigger_category.instance.Billing
+      active = [
+      ]
+      inactive = [
+      ]
+    },
+    {
+      category = zendesk.trigger_category.instance.ZGY
+      active = [
+      ]
+      inactive = [
+      ]
+    },
+    {
+      category = zendesk.trigger_category.instance.Other
+      active = [
+      ]
+      inactive = [
+      ]
+    },
+    {
+      category = zendesk.trigger_category.instance.KNOTS_OCR
+      active = [
+      ]
+      inactive = [
+      ]
+    },
+  ]
+}

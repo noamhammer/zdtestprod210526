@@ -1,0 +1,13 @@
+zendesk.sla_policy Set_first_reply_time@s {
+  title = "Set first reply time"
+  policy_metrics = [
+    {
+      priority = "normal"
+      metric = "first_reply_time"
+      target = 60
+      business_hours = false
+      target_in_seconds = 3600
+    },
+  ]
+  _alias = "Set first reply time"
+}

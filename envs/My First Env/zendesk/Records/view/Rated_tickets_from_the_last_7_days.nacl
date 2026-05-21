@@ -1,0 +1,155 @@
+zendesk.view Rated_tickets_from_the_last_7_days@s {
+  active = true
+  default = false
+  execution = {
+    group_by = "satisfaction_score"
+    group_order = "desc"
+    sort_by = "updated"
+    sort_order = "asc"
+    group = {
+      id = "satisfaction_score"
+      title = "Satisfaction"
+      filterable = true
+      sortable = true
+      order = "desc"
+    }
+    sort = {
+      id = "updated"
+      title = "Updated"
+      filterable = true
+      sortable = true
+      order = "asc"
+    }
+    columns = [
+      {
+        id = "custom_status_id"
+        title = "Ticket status"
+        filterable = true
+        sortable = false
+      },
+      {
+        id = "status"
+        title = "Status category"
+        filterable = true
+        sortable = true
+      },
+      {
+        id = "subject"
+        title = "Subject"
+        filterable = true
+        sortable = true
+      },
+      {
+        id = "requester"
+        title = "Requester"
+        filterable = true
+        sortable = true
+      },
+      {
+        id = "created"
+        title = "Requested"
+        filterable = false
+        sortable = true
+      },
+      {
+        id = "assignee"
+        title = "Assignee"
+        filterable = true
+        sortable = true
+      },
+      {
+        id = "satisfaction_score"
+        title = "Satisfaction"
+        filterable = true
+        sortable = true
+      },
+    ]
+    fields = [
+      {
+        id = "custom_status_id"
+        title = "Ticket status"
+        filterable = true
+        sortable = false
+      },
+      {
+        id = "status"
+        title = "Status category"
+        filterable = true
+        sortable = true
+      },
+      {
+        id = "subject"
+        title = "Subject"
+        filterable = true
+        sortable = true
+      },
+      {
+        id = "requester"
+        title = "Requester"
+        filterable = true
+        sortable = true
+      },
+      {
+        id = "created"
+        title = "Requested"
+        filterable = false
+        sortable = true
+      },
+      {
+        id = "assignee"
+        title = "Assignee"
+        filterable = true
+        sortable = true
+      },
+      {
+        id = "satisfaction_score"
+        title = "Satisfaction"
+        filterable = true
+        sortable = true
+      },
+    ]
+  }
+  conditions = {
+    all = [
+      {
+        field = "status"
+        operator = "greater_than"
+        value = "new"
+      },
+      {
+        field = "SOLVED"
+        operator = "less_than"
+        value = "169"
+      },
+      {
+        field = "support_type"
+        operator = "is"
+        value = "0"
+      },
+    ]
+    any = [
+      {
+        field = "satisfaction_score"
+        operator = "is"
+        value = "good"
+      },
+      {
+        field = "satisfaction_score"
+        operator = "is"
+        value = "good_with_comment"
+      },
+      {
+        field = "satisfaction_score"
+        operator = "is"
+        value = "bad"
+      },
+      {
+        field = "satisfaction_score"
+        operator = "is"
+        value = "bad_with_comment"
+      },
+    ]
+  }
+  raw_title = "{{zd.recently_rated_tickets}}"
+  _alias = "Rated tickets from the last 7 days"
+}

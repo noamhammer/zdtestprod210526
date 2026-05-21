@@ -1,0 +1,9 @@
+zendesk.ticket_field__custom_field_options TestDropdown1_updated_tagger__option3@suuu {
+  raw_name = "option3"
+  value = "option3"
+  allow_solving = true
+  _parent = [
+    zendesk.ticket_field.instance.TestDropdown1_updated_tagger@su,
+  ]
+  _alias = "option3"
+}

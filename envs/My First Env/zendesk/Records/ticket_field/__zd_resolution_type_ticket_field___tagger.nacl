@@ -1,0 +1,20 @@
+zendesk.ticket_field __zd_resolution_type_ticket_field___tagger@_00123_00123vuuu_00125_00125u {
+  type = "tagger"
+  raw_title = "{{zd.resolution_type_ticket_field}}"
+  raw_description = "{{zd.resolution_type_ticket_field_description}}"
+  active = true
+  required = false
+  collapsed_for_agents = false
+  raw_title_in_portal = "{{zd.resolution_type_ticket_field}}"
+  visible_in_portal = false
+  editable_in_portal = false
+  required_in_portal = false
+  agent_can_edit = false
+  removable = true
+  key = "standard::resolution_type"
+  custom_field_options = [
+    zendesk.ticket_field__custom_field_options.instance.__zd_resolution_type_ticket_field___tagger__zd_automated_resolution@_00123_00123vuuu_00125_00125uuuuu,
+    zendesk.ticket_field__custom_field_options.instance.__zd_resolution_type_ticket_field___tagger__zd_assisted_resolution@_00123_00123vuuu_00125_00125uuuuu,
+  ]
+  _alias = "Resolution type"
+}

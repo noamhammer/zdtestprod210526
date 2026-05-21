@@ -1,0 +1,8 @@
+zendesk.automation_order {
+  active = [
+    zendesk.automation.instance.Close_ticket_4_days_after_status_is_set_to_solved@s,
+    zendesk.automation.instance.Request_customer_satisfaction_rating__system_automation_@ssssjsk,
+  ]
+  inactive = [
+  ]
+}
