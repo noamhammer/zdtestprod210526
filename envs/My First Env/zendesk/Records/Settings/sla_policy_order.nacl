@@ -1,5 +1,6 @@
 zendesk.sla_policy_order {
   active = [
     zendesk.sla_policy.instance.Set_first_reply_time@s,
+    zendesk.sla_policy.instance.cli_retest_1779463264,
   ]
 }
