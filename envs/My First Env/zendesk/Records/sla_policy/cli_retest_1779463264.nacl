@@ -1,0 +1,13 @@
+zendesk.sla_policy cli_retest_1779463264 {
+  title = "cli_retest_1779463264"
+  policy_metrics = [
+    {
+      priority = "normal"
+      metric = "first_reply_time"
+      target = 240
+      business_hours = false
+      target_in_seconds = 14400
+    },
+  ]
+  _alias = "cli_retest_1779463264"
+}
