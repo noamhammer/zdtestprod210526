@@ -1,0 +1,13 @@
+zendesk.sla_policy non_main_test_1779466836 {
+  title = "non_main_test_1779466836"
+  policy_metrics = [
+    {
+      priority = "normal"
+      metric = "first_reply_time"
+      target = 240
+      business_hours = false
+      target_in_seconds = 14400
+    },
+  ]
+  _alias = "non_main_test_1779466836"
+}
